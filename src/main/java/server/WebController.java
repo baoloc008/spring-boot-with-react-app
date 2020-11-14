@@ -12,10 +12,11 @@ public class WebController {
     private AppConfig appConfig;
 
     @GetMapping("/api/serverinfo")
-    public String serverInfo() {
-        System.out.println(appConfig.applicationName);
-        String serverTime = new Date().toString();
-        String serverEnvironment = appConfig.serverEnvironment;
-        return String.format("Server time: %s (%s environment)", serverTime, serverEnvironment);
+    public ServerInfo serverInfo() {
+        return ServerInfo.builder()
+                .environment(appConfig.serverEnvironment)
+                .name(appConfig.applicationName)
+                .time(new Date().toString())
+                .build();
     }
 }

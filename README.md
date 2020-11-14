@@ -30,3 +30,5 @@ java -jar target/spring-boot-with-react-app-0.0.1-SNAPSHOT.jar # run application
 ## Links
 - https://blogg.kantega.no/webapp-with-create-react-app-and-spring-boot/
 - https://swissquote.github.io/crafty/User_Guides/Configuring_the_build_in_a_maven_project.html
+- https://medium.com/@andrewmclagan_64462/runtime-environment-variables-create-react-app-84f7c261856c
+- https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/
