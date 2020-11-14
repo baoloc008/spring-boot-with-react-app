@@ -1,0 +1,12 @@
+spring.profiles.active: sandbox
+---
+spring.profiles: local
+spring.profiles.include: common, local
+---
+spring.profiles: sandbox
+spring.profiles.include: common, sandbox
+---
+spring.profiles: production
+spring.profiles.include: common, production
+---
+

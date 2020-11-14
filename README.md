@@ -2,6 +2,19 @@
 
 Build spring boot and react in single jar file
 
+## Run with environment
+
+```sh
+# local
+java -jar -Dspring.profiles.active=local target/spring-boot-with-react-app-0.0.1-SNAPSHOT.jar
+
+# sandbox
+java -jar -Dspring.profiles.active=sandbox target/spring-boot-with-react-app-0.0.1-SNAPSHOT.jar
+
+# production
+java -jar -Dspring.profiles.active=production target/spring-boot-with-react-app-0.0.1-SNAPSHOT.jar
+```
+
 ## Command
 ```sh
 mvn clean install # build jar file
